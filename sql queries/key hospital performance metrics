@@ -13,4 +13,4 @@ FROM hospital_data;
 The Hospital treated 10,000 patients with average treatment cost of $25.5K. Readmission rate is 25.2%.
 
               RECOMMENDATION:
-Reduce hospital readmissions by strengthening post-discharge care and patient follow-up
+Reduce hospital readmissions by strengthening post-discharge care and patient follow-up.
