@@ -1,0 +1,16 @@
+           Business Question:
+What are our key hospital performance metrics?
+
+    Query:
+    SELECT 
+    COUNT(DISTINCT PatientID) AS total_patients,
+    AVG(TreatmentCost) AS avg_treatment_cost,
+    COUNT(CASE WHEN Readmission = 'Yes' THEN 1 END) * 100.0 / COUNT(*) AS readmission_rate,
+    AVG(CASE WHEN Readmission = 'Yes' THEN ReadmissionCost END) AS avg_readmission_cost
+FROM hospital_data;
+
+               KEY FINDING: 
+The Hospital treated 10,000 patients with average treatment cost of $25.5K. Readmission rate is 25.2%.
+
+              RECOMMENDATION:
+Reduce hospital readmissions by strengthening post-discharge care and patient follow-up
