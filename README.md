@@ -23,7 +23,7 @@ Tools:SQL Server, Power BI, DAX
 ![Hospital Dashboard](Hospital_Performance_Dashboard.png)
 
 🔍 SQL Queries
-Repository contains 7 management analysis queries covering:
+Repository contains 9 management analysis queries covering:
 - Overall performance metrics
 - Revenue analysis by hospital
 - Diagnosis patterns and costs
