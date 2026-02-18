@@ -1,0 +1,17 @@
+                 Managemet  Question:
+Which diagnoses have highest readmission rates?
+
+Query:
+SELECT 
+    Diagnosis,
+    COUNT(*) AS total_cases,
+    COUNT(CASE WHEN Readmission = 'Yes' THEN 1 END) AS readmissions,
+    COUNT(CASE WHEN Readmission = 'Yes' THEN 1 END) * 100.0 / COUNT(*) AS readmission_rate
+FROM hospital_data
+GROUP BY Diagnosis
+ORDER BY readmission_rate DESC;
+
+                              KEY FINDING:
+I Identify which illnesses have highest readmission rates to target intervention programs.
+
+                         
