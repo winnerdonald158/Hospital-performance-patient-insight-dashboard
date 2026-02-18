@@ -1,0 +1,19 @@
+                Management Questions:
+What is our patient distribution by age group and gender?
+
+Query:
+SELECT 
+    AgeGroup,
+    Gender,
+    COUNT(*) AS patient_count,
+    AVG(TreatmentCost) AS avg_treatment_cost
+FROM hospital_data
+GROUP BY AgeGroup, Gender
+ORDER BY AgeGroup, Gender;
+
+              KEY FINDING: 
+65+ age group has highest patient volume (~1,500 patients), followed by 19-35 age group. Distribution is fairly balanced by gender.
+
+         RECOMMENDATION:
+Developing an  age-specific care programs, especially for elderly patients (65+) who represent largest patient segment,
+will help in promoting the health and quality of life of the aging population. 
