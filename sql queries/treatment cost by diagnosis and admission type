@@ -1,0 +1,13 @@
+              Managemet Question:
+What drives treatment costs across different factors?
+
+Query:
+SELECT 
+    Diagnosis,
+    AdmissionType,
+    AVG(TreatmentCost) AS avg_cost,
+    COUNT(*) AS patient_count
+FROM hospital_data
+GROUP BY Diagnosis, AdmissionType
+ORDER BY avg_cost DESC;
+
